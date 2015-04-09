@@ -1,0 +1,59 @@
+﻿<html>
+
+
+
+<body>
+    <h1>Willkommen</h1>
+    <form action="http://martinakraus.net/createBookEntry.php" method="get" name="BuchAnlegen">
+
+
+<br>Titel des Buches:<br/>
+<input type='text' class='field' name='titel'  placeholder=''/>
+
+<br>Buchautor:<br/>
+<input type='text' class='field' name='autor'  placeholder=''/>
+<br>ISBN:<br/>
+<input type='number' class='field' name='isbn' placeholder=''/>
+
+<br>Genre:<br/>
+<input type="checkbox" name ="genre"
+value="horror" checked="checked"/>Horror<br/>
+<input type="checkbox" name ="genre"
+value="psycho"/>Psycho<br/>
+<input type="checkbox" name ="genre"
+value="krimi"/>Krimi<br/>
+<input type="checkbox" name ="genre"
+value="doku" />Doku<br/>
+<input type="checkbox" name ="genre"
+value="komödie"/>Komödie<br/>
+<input type="checkbox" name ="genre"
+value="romanze"/>Romanze<br/>
+</select>
+
+
+
+<br>Art des Buches:<br/>
+<select name='art' id='art'>
+<option value="eBook">eBook</option>
+<option value="newspaper">Newspaper</option>
+<option value="taschenbuch">Taschenbuch</option>
+<option value="lexikon">Lexikon</option>
+<option value="hardcover" selected="selected">
+Hardcover</option>
+<option value="paperback">Paperback</option>
+</select>
+
+
+<br>Kapitel:<br/>
+<input type='number' class='field' name='kapitel'placeholder=''/>
+<br>Erscheinungsjahr:<br/>
+<input type='number' class='field' name='jahr' placeholder=''/>
+<br>Auflage:<br/>
+<input type='number' class='field' name='auflage' placeholder=''/>
+
+<input class ="button" type="submit" value="Absenden"/>
+    </form>
+
+</body>
+
+</html>
