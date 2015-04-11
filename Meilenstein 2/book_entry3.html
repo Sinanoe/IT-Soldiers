@@ -1,0 +1,70 @@
+<html>
+
+
+
+<body>
+    <link rel="stylesheet" type="text/css" href="book_entry_style.html">
+<h1>Buch anlegen</h1>
+    <form action="http://martinakraus.net/createBookEntry.php" method="get" name="BuchAnlegen">
+
+<p>
+<label for="buchtitel">Buchtitel</label>
+<input id="buchtitel" type="text" name="buchtitel" value="" size="30" maxlength="50"/>
+
+
+<label2 for="vorname">Dein Vorname</label2>
+&nbsp;&nbsp;<label3><input id="vorname" type="text" name="vorname" value="" size="30" maxlength="50"/></p></label3>
+
+<p>
+<label for="buchautor">Buchautor</label>
+<input id="buchautor" type="text" name="buchautor" value="" size="30" maxlength="50"/>
+
+<label2 for="nachname">Dein Nachname</label2>
+<label3><input id="nachname" type="text" name="nachname" value="" size="30" maxlength="50"/></p></label3>
+
+<p>
+<label for="isbn">ISBN</label>
+<input id="isbn" type="text" name="isbn" value="" size="30" maxlength="50"/>
+
+<label2 for="favorit">Mein Favorit</label2>
+&nbsp;&nbsp;&nbsp;&nbsp;<label3><input type="checkbox" name="favorit" checked="checked"/></h3></p></label3>
+
+<p>
+<label for="kapitel">Kapitel</label>
+<input id="kapitel" type="text" name="kapitel" value="" size="30" maxlength="50"/></p>
+
+<p>
+<label for="erscheinungsjahr">Erscheinungsjahr</label>
+<input id="erscheinungsjahr" type="text" name="erscheinungsjahr" value="" size="30" maxlength="50"/></p>
+
+<p>
+<label for="auflage">Auflage</label>
+<input id="auflage" type="text" name="auflage" value="" size="30" maxlength="50"/></p>
+
+<p>
+<label for="art des buches">Art des Buches</label>
+<select name='art' id='art'>
+<option value="eBook">eBook</option>
+<option value="newspaper">Newspaper</option>
+<option value="taschenbuch">Taschenbuch</option>
+<option value="lexikon">Lexikon</option>
+<option value="hardcover" selected="selected">
+Hardcover</option>
+<option value="paperback">Paperback</option>
+</select></p>
+
+
+<label for="genre">Genre</label>
+<gen><input type="checkbox" name ="genre"value="horror" checked="checked"/>Horror
+<input type="checkbox" name ="genre"value="doku"/>Doku<br/>
+<genre><input type="checkbox" name ="genre"value="psycho"/>Psycho
+<input type="checkbox" name ="genre"value="komödie"/>Komödie<br/>
+<genre><input type="checkbox" name ="genre"value="krimi"/>Krimi &nbsp;
+<input type="checkbox" name ="genre"value="romanze"/>Romanze
+</genre>
+
+
+<div> <input type = "submit" class="button" value="Absenden" /> </div>
+
+</body>
+</html>
