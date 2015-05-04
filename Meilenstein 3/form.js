@@ -1,4 +1,4 @@
-function check(form, vorname, nachname, buchautor, buchtitel, isbn, erscheinungsjahr) {
+function check(form, vorname, nachname, buchautor, buchtitel, isbn, erscheinungsjahr, auflage) {
   
 	recheck = /^[\sa-zßA-ZäöüÄÖÜ]+$/;
 	// Überprüfe eingegebenen Vorname auf Gültigkeit
