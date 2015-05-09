@@ -1,51 +1,37 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Meine Bücher</title>
-	<link rel="stylesheet" type="text/css" href="book_style.html">
-	<script type="text/javascript" src="roman_books.json"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Meine B&uuml;cher</title>
+    <link rel="stylesheet" type="text/css" href="book_style.html">
+    <script src="bookSwitcher.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="horror_books.json"></script>
+	<script type="text/javascript" src="roman_books.json"></script>
+  </head>
 
-</head>
-<body>
-<center><h1>Meine Bücher</h1></center>
- <div class="button_design">
-      <a href="book.html"><div class="button_nav">Horror</div></a>
-      <a href="book.html"><div class="button_nav">Roman</div></a>
-     </div>
+  <body>
+    <center><h1>Meine B&uuml;cher</h1>
+	<table style=" border: 2px solid #3F48CC; width:1000px; text-align:center; cursor:pointer;">
+	  <tr>
+	    <th style="background-color: #3F48CC;" id="horror" name="horror" onClick="tab_horror_switcher()">Horror</th>
+		<th style="background-color: #00A2E8;" id="roman" name="roman" onClick="tab_roman_switcher()">Roman</th>
+	  </tr>
+	</table>
+	
+	  <br />
+	  <br />
 
-<center><table border="1">
-<tr>
-<th>Autor</th>
-<th>Titel</th>
-<th>Kapitel</th>
-<th>Art des Buches</th>
-<th>ISBN</th>
-<th>Erscheinungsjahr</th>
-<th>Auflage</th>
-
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-
-</tr>
-</table></center>
-
-
-</body>
+	  <div id="tab_horror">
+	  <script type="text/javascript">
+		json_load(object_horror);
+		</script>
+		</div>
+		
+	  <div style="display:none" id="tab_roman">
+	  <script type="text/javascript">
+		json_load(object_roman);
+	</script>
+	</div>
+	</center>
+  </body>
 </html>
