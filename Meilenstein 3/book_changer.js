@@ -30,16 +30,16 @@ function tab_roman_switcher() {
  */
 function json_load(json_obj) {
 	var i = 0;
-	document.writeln("<table border='2'><tr>");
+	document.writeln("<table class='itemList' ><tr>");
 	document.writeln("<th>Autor</th><th>Titel</th><th>Kapitel</th><th>Art des Buches</th><th>ISBN</th><th>Erscheinungsjahr</th><th>Auflage</th></tr>");
 	
 	for(i=0;i<json_obj.bookdata.length;i++)
 	{	
 		
 		document.writeln("<tr><td>"+ json_obj.bookdata[i].autor+"</td><td>"+ json_obj.bookdata[i].titel+"</td>");
-		document.writeln("<td>"+ json_obj.bookdata[i].kapitel+"</td><td>"+ json_obj.bookdata[i].buchart+"</td>");
+		document.writeln("<td >"+ json_obj.bookdata[i].kapitel+"</td><td>"+ json_obj.bookdata[i].buchart+"</td>");
 		document.writeln("<td>"+ json_obj.bookdata[i].ISBN+"</td><td>"+ json_obj.bookdata[i].erscheinungsjahr+"</td>");
-		document.writeln("<td>"+ json_obj.bookdata[i].auflage+"</td></tr>");
+		document.writeln("<td >"+ json_obj.bookdata[i].auflage+"</td></tr>");
 		
 	}
 	document.writeln("</table>");
