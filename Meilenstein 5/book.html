@@ -5,13 +5,11 @@
     <title>Meine B&uuml;cher</title>
     <link rel="stylesheet" type="text/css" href="book_style.css">
     <script src="book_changer.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="horror_books.json"></script>
-	<script type="text/javascript" src="roman_books.json"></script>
   </head>
 
-  <body>
+  <body onload="load();">
     <center><h1>Meine B&uuml;cher</h1>
-	<table style=" border: 2px solid #3F48CC; padding:0px; border-collapse: collapse; width:1000px; text-align:center; cursor:pointer;">
+	<table style=" border: 2px solid #3F48CC; padding:0px; border-collapse:collapse; width:1000px; text-align:center; cursor:pointer;">
 	  <tr>
 	    <th style="background-color: #3F48CC; " id="horror" name="horror" onClick="tab_horror_switcher()">Horror</th>
 		<th style="background-color: #00A2E8;" id="roman" name="roman" onClick="tab_roman_switcher()">Roman</th>
