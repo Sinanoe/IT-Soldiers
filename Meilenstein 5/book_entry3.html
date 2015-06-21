@@ -8,7 +8,7 @@
 <body>
     
 <h1>Buch anlegen</h1>
-    <form action="http://localhost/buchanlegen.php" method="get" name="BuchAnlegen">
+    <form action="buchanlegen.php" method="post" name="BuchAnlegen">
 
 <p>
 <label for="buchtitel">Buchtitel</label>
@@ -67,7 +67,7 @@ Hardcover</option>
 </genre>
 
 
-<div> <input type = "submit" class="button" value="Absenden" onclick="return check(this.form, this.vorname, this.nachname, this.buchautor, this.buchtitel, this.isbn, this.erscheinungsjahr, this.auflage);"/> </div>
+<div> <input type = "submit" class="button" value="Absenden" /> </div>
 
 </body>
 </html>
