@@ -1,3 +1,7 @@
+﻿function load() {
+		showJSON('horror');
+}
+
 /**
  * Horrorbücher ein 
  * Farbänderung des Horror-Tabs auf #3F48CC
@@ -8,6 +12,7 @@ function tab_horror_switcher() {
 	
 	document.getElementById('horror').style.backgroundColor="#3F48CC";
 	document.getElementById('roman').style.backgroundColor="#00A2E8";
+	showJSON('horror');
 }
 /**
  * Romanbücher ein
@@ -18,11 +23,10 @@ function tab_roman_switcher() {
  
 	document.getElementById('horror').style.backgroundColor="#00A2E8";
 	document.getElementById('roman').style.backgroundColor="#3F48CC";
+	showJSON('roman');
 }
 
-function load() {
-		showJSON('horror');
-}
+
 
 /**
  * Die Tabelle wird angelegt.
