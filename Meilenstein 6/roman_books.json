@@ -1,5 +1,4 @@
-﻿﻿//read JSON data: http://www.w3schools.com/json/json_example.asp 
-var object_roman = {
+﻿{
 "bookdata": [
 {
 "autor": "Paulo Coelho",

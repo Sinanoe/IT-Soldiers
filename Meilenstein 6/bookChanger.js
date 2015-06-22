@@ -1,5 +1,5 @@
 ﻿function load() {
-		showJSON('horror');
+		viewJson('horror');
 }
 
 /**
@@ -12,7 +12,7 @@ function tab_horror_switcher() {
 	
 	document.getElementById('horror').style.backgroundColor="#3F48CC";
 	document.getElementById('roman').style.backgroundColor="#00A2E8";
-	showJSON('horror');
+	viewJson('horror');
 }
 /**
  * Romanbücher ein
@@ -23,7 +23,7 @@ function tab_roman_switcher() {
  
 	document.getElementById('horror').style.backgroundColor="#00A2E8";
 	document.getElementById('roman').style.backgroundColor="#3F48CC";
-	showJSON('roman');
+	viewJson('roman');
 }
 
 
@@ -32,7 +32,7 @@ function tab_roman_switcher() {
  * Die Tabelle wird angelegt.
  *
  */
-function createTable(genre) {
+function viewJson(genre) {
 	var source = "getBooks.php";
 	var para = "json="+genre;
 	if (genre=="") {
